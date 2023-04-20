@@ -1,3 +1,8 @@
+// export interface productItems
+// {
+//     items: Array<Product>;
+// }
+
 export interface Product
 {
     id: number;
