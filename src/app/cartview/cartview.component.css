@@ -8,8 +8,8 @@
 }
 .col3
 {
-    height: 700px;
-    width: 400px;
+    min-height: 700px;
+    width: 500px;
     border: 1px solid;
 }
 button{

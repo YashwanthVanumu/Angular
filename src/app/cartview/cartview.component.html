@@ -4,11 +4,12 @@
  <div class="col-6 col1">
    <p>HI</p>
    <p>{{user}}</p>
+   <h6>Thank you for ordering</h6>
  </div>
  <div class="col-6 ms-5 mt-5 col3">
   <div class="row">
 <div class="d-flex mt-4" *ngFor="let item of items">
-    <h6 class="mt-1">{{ item.name }}</h6>
+    <h6 class="mt-1 p-2">{{ item.name }}</h6>
     <div class="count d-flex gap-3">
     <button (click)="countdec(item.id)">-</button>
     <h5>{{item.quantity}}</h5>

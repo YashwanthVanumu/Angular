@@ -32,46 +32,46 @@ export class CartService {
 
   getTotal(items: Array<Product>) : number{
      return items.
-     map((item) => item.price * item.quantity)
+     map((item) => item.price)
      .reduce((prev, current) => prev + current, 0);
   }
 
   Totalprice(items: Array<Product>) : number{
-     return this.getTotal(this.items) + this.deliveryfee + this.govttax;
+     return this.getTotal(items) + this.deliveryfee + this.govttax;
   }
 
   Countinc(id: any, data: any)
   {
-    const objWithIdIndex = this.items.findIndex((obj) => obj.id === id);
+    const objWithIdIndex = data.findIndex((obj : {id : any;}) => obj.id === id);
     if(objWithIdIndex > -1)
     {
-      this.items[objWithIdIndex].quantity+=1;
-      this.items[objWithIdIndex].price = this.items[objWithIdIndex].quantity * this.items[objWithIdIndex].price;
+      data[objWithIdIndex].quantity+=1;
+      data[objWithIdIndex].price = data[objWithIdIndex].quantity * data[objWithIdIndex].Actualprice;
     }
 
-    return this.items;
+    return data;
   }
 
   Countdec(id: any, data: any)
   {
-    const objWithIdIndex = this.items.findIndex((obj) => obj.id === id);
-    if(objWithIdIndex > -1)
+    const objWithIdInd = data.findIndex((obj: { id: any; }) => obj.id === id);
+    if(objWithIdInd > -1)
     {
-      this.items[objWithIdIndex].quantity-=1;
-      this.items[objWithIdIndex].price = this.items[objWithIdIndex].quantity * this.items[objWithIdIndex].price;
+      data[objWithIdInd].quantity-=1;
+      data[objWithIdInd].price = data[objWithIdInd].quantity * data[objWithIdInd].Actualprice;
     }
 
-    return this.items;
+    return data;
   }
 
   removefromCart(id: any, data: any)
   {
-    const objWithIdIndex = this.items.findIndex((obj) => obj.id === id);
+    const objWithIdIndex = data.findIndex((obj: { id: any; }) => obj.id === id);
 
   if (objWithIdIndex > -1) {
     this.items.splice(objWithIdIndex, 1);
   }
 
-  return this.items;
+  return data;
   }
 }
