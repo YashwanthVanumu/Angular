@@ -1,0 +1,100 @@
+#meh
+{
+    margin-left: 250px;
+    margin-right: 250px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-color: white;
+}
+#rating
+{
+    margin-left: 300px;
+    border-radius: 10px;
+    width: 80px;
+    height: 85px;
+}
+#k
+{
+    font-size: 10px;
+    color: lightslategray;
+    font-weight: 700;
+    margin-left: 3px;
+}
+#u1
+{
+  border: 1px dashed lightslategray;
+  margin-left: 10px;
+}
+#f
+{
+    width: 230px;
+    border-radius: 10px;
+}
+#u2
+{
+    border: 1px solid;
+    margin-left: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+#meh2
+{
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-color: white;
+}
+#meh3
+{
+    margin-left: 240px;
+    margin-right: 250px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-color: white;
+}
+#bestseller
+{
+    color: orange;
+}
+#mbiryanis
+{
+    position: relative;
+    height: 115px;
+    width: 125px;
+    border-radius: 10px;
+}
+#add
+{
+  position: absolute;
+  margin-top: 85px;
+  height: 5%;
+  margin-left: 11px;
+  width: 100px;
+  color: green;
+  font-weight: 500;
+}
+#u3
+{
+    margin-left: 10px;
+    width: 100%;
+}
+#meh4
+{
+    margin-left: 250px;
+    margin-right: 250px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-color: white;
+    margin-top: 30px;
+}
+#meh5
+{
+    margin-left: 240px;
+    margin-right: 250px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-color: white;
+    margin-top: 20px;
+}

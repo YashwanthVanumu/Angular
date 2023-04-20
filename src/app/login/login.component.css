@@ -1,0 +1,227 @@
+#image2
+{
+	height: 500px;
+	width: 101%;
+}
+#image1
+{
+	width: 50%;
+	height: 100px;
+    margin-left: 45px;
+}
+#order
+{
+	margin-left: 70px;
+	margin-top: 120px;
+	color: #84735A;
+}
+#row2
+{
+	margin-left: 10px;
+	margin-top: 50px;
+}
+#loginbtn
+{
+	padding-left: 55px;
+}
+#swiggyimg
+{
+	padding-right: 20px;
+}
+#login2
+{
+	margin-top: 60px;
+	margin-right: 280px;
+}
+#login3
+{
+	margin-right: 280px;
+	margin-top: 20px;
+	width: 85%;
+	height: 8%;
+	background-color: DarkOrange;
+}
+.form-floating
+{
+	width: 250px;
+}
+
+#form2
+{
+	margin-right: 20px;
+}
+#Form
+{
+	margin-top: 40px;
+	width: 480px;
+	/*width: 600px;*/
+}
+#pop
+{
+	margin-left: 70px;
+	color: #84735A;
+	margin-top: 30px;
+}
+#pop2
+{
+	margin-left: 70px;
+	color: #84735A;
+	margin-top: 10px;
+}
+#row3
+{
+	background-color: #d75213bf;
+}
+
+#liveor
+{
+	height: 300px;
+	width: 500px;
+}
+#lifastdel
+{
+	height: 300px;
+	margin-left: 90px;
+}
+#swigonphn
+{
+	height: 500px;
+	width: 700px;
+	margin-left: 80px;
+}
+#getplay
+{
+	background-color: black;
+	box-sizing: border-box;
+	height: 65px;
+	width: 180px;
+	border-radius: 10px;
+	display: flex;
+	margin-left: 50px;
+	margin-top: 30px;
+}
+#playst
+{
+	width: 50px;
+	height: 50px;
+	flex: 1;
+	margin-top: 8px;
+	margin-left: 5px;
+}
+#gionplay
+{
+	margin-left: 10px;
+	margin-top: 5px;
+}
+#textgp
+{
+	font-size: 20px;
+	font-weight: 500;
+	color: white;
+}
+#getapp
+{
+  background-color: black;
+	box-sizing: border-box;
+	height: 65px;
+	width: 180px;
+	border-radius: 10px;
+	display: flex;
+	margin-left: 50px;
+	margin-top: 30px;	
+}
+#dotapp
+{
+	margin-left: 15px;
+	margin-top: 5px;
+}
+#appst
+{
+	height: 45px;
+	width: 50px;
+	flex: 1;
+	margin-top: 8px;
+	margin-left: 5px;
+}
+#textAS
+{
+  font-size: 20px;
+	font-weight: 500;
+	color: white;
+}
+li
+{
+ line-height: 2.0 ;
+ color: white;
+ list-style-type: none;
+}
+#getplay2
+{
+  background-color: black;
+	box-sizing: border-box;
+	height: 65px;
+	width: 180px;
+	border-radius: 10px;
+	display: flex;
+	margin-left: 50px;
+	margin-top: 30px;	
+	border-style: solid;
+	border-color: white;
+}
+#playst2
+{
+	width: 50px;
+	height: 50px;
+	flex: 1;
+	margin-top: 8px;
+	margin-left: 5px;	
+}
+#getapp3
+{
+  background-color: black;
+	box-sizing: border-box;
+	height: 65px;
+	width: 180px;
+	border-radius: 10px;
+	display: flex;
+	margin-left: 50px;
+	margin-top: 30px;	
+	border-style: solid;
+	border-color: white;	
+}
+#appst2
+{
+	height: 45px;
+	width: 50px;
+	flex: 1;
+	margin-top: 8px;
+	margin-left: 5px;	
+}
+.li1
+{
+	font-weight: 600;
+	color: #a9a7a5;
+}
+#NoMin
+{
+	color: white;
+	margin-left: 50px;
+}
+
+
+@media only screen and (min-width: 360px) and (max-width: 640px)
+{
+
+#Form
+{
+	margin-top: 40px;
+	width: 250px;
+	/*width: 600px;*/
+}
+#row3
+{
+margin-top: 10%;
+
+}
+
+}

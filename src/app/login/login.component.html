@@ -1,0 +1,164 @@
+<div class="container-fluid">
+  <div class="row align-items-start" id="row1">
+    <div class="col-lg-6">
+      <div class="row align-items-start" id="row2">
+        <div class="col-lg-6 container-fluid" id="swiggyimg">
+          <img src="{{myvar}}" id="image1" class="img-fluid">
+        </div>
+        <div class="col-lg-6" id="loginbtn">
+          <button type="button" class="btn btn-light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample">Login</button>
+          <button type="button" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample1"
+            aria-controls="offcanvasExample">Signup</button>
+        </div>
+      </div>
+      <h5 id="order">Order food from favourite restaurants near you</h5>
+
+      <div class="container">
+
+        <!-- <div>
+        <div> -->
+        <div class="input-group d-flex mx-auto ms-5" id="Form">
+          <input type="search" class="form-control" placeholder="Enter your delivery location" id="search1"
+            aria-label="Recipient's username" aria-describedby="button-addon2">
+          <!-- </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" *ngFor="let c of locationdetails | searchfilter: searchText">
+              {{c}}
+            </li>
+          </ul>
+        </div> -->
+          <button class="btn btn-outline-secondary" type="button" id="button-addon3">
+            <i class="fa-solid fa-location-crosshairs"></i>Locate Me
+          </button>
+          <button class="btn" style="color: white;background-color: DarkOrange;" type="submit">Find Food</button>
+        </div>
+
+
+
+      </div>
+      <h6 id="pop">POPULAR CITIES IN INDIA</h6>
+      <h6 id="pop2">Ahmedabad Bangalore Chennai Delhi Gurgaon Hyderabad Kolkata Mumbai Pune& more.</h6>
+    </div>
+    <div class="col-lg-6">
+      <img src="{{my_var}}" id="image2" class="img-fluid">
+    </div>
+  </div>
+
+  <!-- Login Offcanvas -->
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <pre><h2 class="offcanvas-title" id="login2">Login<br><a data-bs-toggle="offcanvas" href="#offcanvasExample1" aria-controls="offcanvasExample"><h6>or. create a account</h6></a></h2></pre>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <form class="form-floating" id="form2">
+        <input type="email" class="form-control" id="floatingInputValue" name="phonenum" [(ngModel)]="enterObj.phonenum"
+          placeholder="name@example.com" required>
+        <label for="floatingInputValue">Phone number</label>
+      </form>
+      <form class="form-floating" id="form2">
+        <input type="text" class="form-control" id="floatingInputValue0" name="passwd" [(ngModel)]="enterObj.passwd"
+          placeholder="name@example.com">
+        <label for="floatingInputValue0">Password</label>
+      </form>
+      <button type="button" id="login3" (click)="enterlogin()">Login</button>
+    </div>
+  </div>
+
+  <!-- Register Offcanvas -->
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample1" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <pre><h2 class="offcanvas-title" id="login2">Sign up<br><a data-bs-toggle="offcanvas" href="#offcanvasExample" aria-controls="offcanvasExample"><h6>or. login into your account</h6></a></h2></pre>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <form class="form-floating" id="form3">
+        <input type="text" class="form-control" id="floatingInputValue1" name="phnum" [(ngModel)]="taskObj.phnnum"
+          placeholder="name@example.com">
+        <label for="floatingInputValue1">Phone number</label>
+      </form>
+      <form class="form-floating" id="form3">
+        <input type="text" class="form-control" id="floatingInputValue2" name="name" [(ngModel)]="taskObj.name"
+          placeholder="name@example.com">
+        <label for="floatingInputValue2">Name</label>
+      </form>
+      <form class="form-floating" id="form3">
+        <input type="email" class="form-control" id="floatingInputValue3" name="email" [(ngModel)]="taskObj.email"
+          placeholder="name@example.com">
+        <label for="floatingInputValue3">Email</label>
+      </form>
+      <form class="form-floating" id="form3">
+        <input type="text" class="form-control" id="floatingInputValue4" name="password" [(ngModel)]="taskObj.password"
+          placeholder="name@example.com">
+        <label for="floatingInputValue4">Password</label>
+      </form>
+      <button type="button" (click)="savelogin()" id="login3">Continue</button>
+    </div>
+  </div>
+
+  <!-- third row -->
+
+  <div class="row align-items-start" id="row3">
+    <div class="col-lg-4">
+      <img src="{{nominord}}" class="img-fluid">
+      <h5 id="NoMin">No minimum order</h5>
+      <h5 style="color: white;margin-left: 20px;font-size: 16px; font-family: inherit;width: 280px;">Order in for
+        yourself or for the group, with no restrictions on order value</h5>
+    </div>
+    <div class="col-lg-4">
+      <img src="{{liveord}}" id="liveor" class="img-fluid">
+      <h5 style="color: white;margin-left: 160px;">Fast tracking</h5>
+      <h5 style="color: white;margin-left: 100px;font-size: 16px; font-family: inherit;width: 300px;">Know where your
+        order is at all times, from the restaurant to your doorstep</h5>
+    </div>
+    <div class="col-lg-4">
+      <img src="{{fastdel}}" id="lifastdel" class="img-fluid">
+      <h5 style="color: white;margin-left: 120px;">Ligthning-Fast Delivery</h5>
+      <h5 style="color: white;margin-left: 100px;font-size: 16px; font-family: inherit;width: 300px;">Experience
+        Swiggy's superfast delivery for food delivered fresh & on time</h5>
+    </div>
+  </div>
+
+  <!-- fourth row -->
+
+  <div class="row align-items-start" id="row4">
+    <div class="col-lg-4">
+      <h1 style="width: 300px;font-size: 40px;font-weight: 600;margin-top: 140px;margin-left: 50px;">Restaurants in your
+        pocket</h1>
+      <div class="row">
+        <h5 style="color: #7e808c;width: 400px;font-size: 20px;font-weight: 300;margin-top: 20px;margin-left: 50px;">
+          Order from your favorite restaurants & track on the go, with the all-new Swiggy app.</h5>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <a href="https://play.google.com/store/apps/details?id=in.swiggy.android" style="text-decoration: none;">
+            <div id="getplay">
+              <div><img src="{{playstore}}" id="playst" class="img-fluid"> </div>
+              <div id="gionplay"><span style="color: white">Get it on </span> <span id="textgp">Google play</span></div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a href="https://apps.apple.com/in/app/swiggy-food-delivery-more/id989540920" style="text-decoration: none;">
+            <div id="getapp">
+              <div><img src="{{appstore}}" id="appst" class="img-fluid"></div>
+              <div id="dotapp"><span style="color: white">Download on the </span> <span id="textAS">App Store</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-8">
+      <img src="{{swigonphn}}" id="swigonphn" class="img-fluid">
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+
+   <app-footer></app-footer>
+
+</div>

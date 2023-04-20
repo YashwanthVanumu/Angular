@@ -1,0 +1,138 @@
+.main
+{
+	height: 100%;
+	width: 100%;
+	min-height: 100vh;
+}
+.container
+{
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	min-height: 100vh;
+}
+#OFFER
+{
+    margin-top: 160px;
+    margin-left: 60px;
+    font-size: 18px;
+    font-weight: 600;
+    width: 150px;
+}
+#freedeli
+{
+ margin-left: 10px;
+}
+#explore
+{
+    margin-top: 160px;
+    margin-left: 60px;
+    font-size: 18px;
+    font-weight: 600;
+    width: 200px;
+}
+#favourite
+{
+ 
+    margin-left: 10px;
+}
+#delicacies
+{
+    margin-left: 60px;
+    font-size: 12px;
+    font-weight: 300;
+    width: 150px;
+    color: white;
+}
+#freed
+{
+    gap: 30px;
+}
+.li2
+{
+    font-weight: 600;
+	color: #a9a7a5;
+	line-height: 2.0 ;
+	list-style-type: none;
+}
+#getplay2
+{
+  background-color: black;
+	box-sizing: border-box;
+	height: 65px;
+	width: 180px;
+	border-radius: 10px;
+	display: flex;
+	margin-left: 50px;
+	margin-top: 30px;	
+	border-style: solid;
+	border-color: white;
+}
+#getapp3
+{
+    background-color: black;
+	box-sizing: border-box;
+	height: 65px;
+	width: 180px;
+	border-radius: 10px;
+	display: flex;
+	margin-left: 50px;
+	margin-top: 30px;	
+	border-style: solid;
+	border-color: white;
+}
+#playst2
+{
+    width: 50px;
+	height: 50px;
+	flex: 1;
+	margin-top: 8px;
+	margin-left: 5px;	
+}
+#appst2
+{
+    height: 45px;
+	width: 50px;
+	flex: 1;
+	margin-top: 8px;
+	margin-left: 5px;
+}
+#gionplay
+{
+	margin-left: 10px;
+	margin-top: 5px;
+}
+#dotapp
+{
+	margin-left: 10px;
+	margin-top: 5px;
+}
+#textgp
+{
+	font-size: 20px;
+	font-weight: 500;
+	color: white;
+}
+#textAS
+{
+  font-size: 20px;
+	font-weight: 500;
+	color: white;
+}
+.li3
+{
+ line-height: 2.0 ;
+ color: white;
+ list-style-type: none;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.card1
+{
+	width: 17rem;
+	height: 300px; 
+	margin-top: 50px;
+	margin-left: 20px;
+}

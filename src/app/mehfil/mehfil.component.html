@@ -1,0 +1,75 @@
+  <app-navbar></app-navbar>
+  <div class="row mt-5" id="meh">
+   <div class="col-6">
+    <h5>Mehfil</h5>
+    <p>Biryani,North Indian<br>Narayan guda,2.0 km</p>
+    <p></p>
+   </div>
+   <div class="col-6">
+   <div class="border mt-1 " id="rating">
+    <div class="d-flex">
+    <i class="fa-solid fa-star ms-3 mt-2" style="color: rgba(8, 146, 8, 0.781);"></i>
+    <p class="ms-1 mt-1" style="color: rgba(8, 146, 8, 0.781); font-weight: 700;">3.8</p>
+    </div>
+    <div class="border w-75 mb-1" style="margin-left: 13px;"></div>
+    <p class="ms-2 mt-2" id="k">10k+ ratings</p>
+    </div>
+    </div>
+    <u class="mt-2" id="u1"></u>
+    <div class="col text-start">
+      <div class="d-flex">
+        <i class="fa-solid fa-clock fa-xl mt-4"></i>
+        <p class="mt-2 ms-2 fw-bold">23 MINS</p>
+        <span class="fa-stack  mt-2 ms-3" style="vertical-align: top;">
+          <i class="fa-regular fa-circle fa-stack-2x"></i>
+          <i class="fa-solid fa-indian-rupee sign fa-stack-1x"></i>
+        </span>
+        <p class="mt-2 ms-2 fw-bold">₹300 for two</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="d-flex" id="g">
+        <div class="border" id="f">
+        <div class="d-flex" style="height: 32px;" >
+          <img src={{Offersimg}} height="18" width="18" style="background-color: rgba(141, 35, 35, 0.438); border-radius: 10px;margin-top: 12px;margin-left: 10px;">
+          <p class="ms-2 mt-2 fw-bolder" style="color: rgb(96, 98, 100);font-size: 15px;">10% OFF UPTO ₹40</p>
+        </div>
+        <p style="font-size: 12px;margin-left: 9px; font-weight: 600;color: lightslategray;">USE TRYNEW | ABOVE ₹159</p>
+      </div>
+      <div class="border ms-3" id="f">
+        <div class="d-flex" style="height: 32px;" >
+          <img src={{federalbankimg}} height="18" width="18" style="background-color: rgba(141, 35, 35, 0.438); border-radius: 10px;margin-top: 12px;margin-left: 10px;">
+          <p class="ms-2 mt-2 fw-bolder" style="color: rgb(96, 98, 100);font-size: 15px;">20% OFF UPTO ₹120</p>
+        </div>
+        <p style="font-size: 12px;margin-left: 9px; font-weight: 600;color: lightslategray;">USE FEDERALACC | ABOVE ₹249</p>
+      </div>
+      <div class="border ms-3" id="f">
+        <div class="d-flex" style="height: 32px;" >
+          <img src={{audebit}} height="18" width="18" style="background-color: rgba(141, 35, 35, 0.438); border-radius: 10px;margin-top: 12px;margin-left: 10px;">
+          <p class="ms-2 mt-2 fw-bolder" style="color: rgb(96, 98, 100);font-size: 15px;">FLAT ₹100 OFF</p>
+        </div>
+        <p style="font-size: 12px;margin-left: 9px; font-weight: 600;color: lightslategray;">USE AUDC100 | ABOVE ₹299</p>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" id="meh2">
+    <div class="d-flex">
+    <h6 class="fw-semibold fs-6">Veg Only</h6>
+    <div class="form-check form-switch ms-1">
+      <a (click)="veg()">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+    </a>    
+    </div>
+  </div>
+    <u id="u2"></u> 
+  </div> 
+  <ng-container *ngIf="veg1; else elseblock">
+    <app-veg></app-veg>
+  </ng-container>
+  <ng-template #elseblock>
+  <app-non-veg></app-non-veg>
+</ng-template>
+<div class="row" id="meh4">
+  <hr style="border: 10px solid;margin-left: 8px;">
+</div>

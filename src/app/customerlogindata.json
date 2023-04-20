@@ -1,0 +1,53 @@
+{
+  "customer": [
+    {
+      "phnnum": "9398613744",
+      "name": "yash",
+      "email": "yashwanthvanumu@gmail.com",
+      "password": "12345",
+      "id": 1
+    },
+    {
+      "phnnum": "9398613742",
+      "name": "yas1",
+      "email": "yash@gmail.com",
+      "password": "123457",
+      "id": 2
+    },
+    {
+      "phnnum": "6879809833",
+      "name": "yash",
+      "email": "yash@gmail.com",
+      "password": "3456",
+      "id": 3
+    },
+    {
+      "phnnum": "8688448900",
+      "name": "azhar",
+      "email": "azhar@gmail.com",
+      "password": "786",
+      "id": 4
+    },
+    {
+      "phnnum": "8912678956",
+      "name": "yash",
+      "email": "yash@gmail.com",
+      "password": "4546",
+      "id": 5
+    },
+    {
+      "phnnum": "9182782130",
+      "name": "chandu",
+      "email": "chanduraj@gmail.com",
+      "password": "1234567890",
+      "id": 6
+    },
+    {
+      "phnnum": "9182782130",
+      "name": "chandu",
+      "email": "chanduraj@gmail.com",
+      "password": "1234567890",
+      "id": 7
+    }
+  ]
+}
