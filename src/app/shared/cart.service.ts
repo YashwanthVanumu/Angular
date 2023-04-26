@@ -57,8 +57,15 @@ export class CartService {
     const objWithIdInd = data.findIndex((obj: { id: any; }) => obj.id === id);
     if(objWithIdInd > -1)
     {
-      data[objWithIdInd].quantity-=1;
+      if(data[objWithIdInd].quantity>=2)
+      {
+        data[objWithIdInd].quantity-=1;
       data[objWithIdInd].price = data[objWithIdInd].quantity * data[objWithIdInd].Actualprice;
+      }
+      else
+      {
+        this.removefromCart(data[objWithIdInd].id, data);
+      }
     }
 
     return data;

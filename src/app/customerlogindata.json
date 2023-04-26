@@ -55,6 +55,20 @@
       "email": "dwd",
       "password": "123456",
       "id": 8
+    },
+    {
+      "phnnum": "",
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 9
+    },
+    {
+      "phnnum": "8374373952",
+      "name": "Sagar",
+      "email": "sagar@gmail.com",
+      "password": "56789",
+      "id": 10
     }
   ]
 }
