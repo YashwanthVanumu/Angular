@@ -5,7 +5,6 @@
 
 export interface Product
 {
-    [x: string]: number;
     id: number;
     name: string;
     price: number;
