@@ -69,6 +69,13 @@
       "email": "sagar@gmail.com",
       "password": "56789",
       "id": 10
+    },
+    {
+      "phnnum": "9505482627",
+      "name": "Sravan",
+      "email": "sravan@gmail.com",
+      "password": "98765",
+      "id": 11
     }
   ]
 }

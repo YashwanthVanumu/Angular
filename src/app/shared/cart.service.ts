@@ -14,8 +14,27 @@ export class CartService {
   items: Product[]= [];
   addToCart(product: Product) {
     this.items.push(product);
+    // function count_duplicate(a: Product[]){
+    //   let counts : any = {}
+     
+    //   for(let i =0; i < a.length; i++){ 
+    //       if (counts[a[i].quantity]){
+    //       counts[a[i].quantity] += 1
+    //       } else {
+    //       counts[a[i].quantity] = 1
+    //       }
+    //      }  
+    //      for (let prop in counts){
+    //          if (counts[prop] >= 2){
+    //              console.log(prop + " counted: " + counts[prop] + " times.")
+    //          }
+    //      }
+    //    console.log(counts)
+    //  }
+     
+    //  count_duplicate(this.items)
     console.log(this.items);
-  }
+}
   getItems() {
     return this.items;
   }
