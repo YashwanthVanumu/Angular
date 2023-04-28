@@ -8,3 +8,18 @@ h6:hover
 .row2{
   margin-left: 700px;
 }
+#id1
+{
+  height: 15px;
+  width: 15px;
+  border: 1px solid;
+  border-radius: 80%;
+  position: absolute;
+  margin-top: 4px;
+  margin-left: 2px;
+  background-color: red;
+}
+h6{
+  position: absolute;
+  margin-left: 2px;
+}

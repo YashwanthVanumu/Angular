@@ -38,6 +38,10 @@ export class CartService {
   getItems() {
     return this.items;
   }
+  getlength()
+  {
+    return this.items.length;
+  }
 
   setname(data: any)
   {

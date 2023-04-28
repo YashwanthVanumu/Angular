@@ -27,7 +27,7 @@ product = products;
   addtoCart(product: Product)
   {
     this.cartService.addToCart(product);
-    console.log(product)
+    console.log(product);
     window.alert('Your product has been added to the cart!');
   }
 }
