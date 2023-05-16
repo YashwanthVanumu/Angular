@@ -14,7 +14,7 @@
       </div>
       <h5 id="order">Order food from favourite restaurants near you</h5>
 
-      <div class="container">
+      <div class="container-fluid">
 
         <!-- <div>
         <div> -->
@@ -76,23 +76,36 @@
     </div>
     <div class="offcanvas-body">
       <form class="form-floating" id="form3">
-        <input type="text" class="form-control" id="floatingInputValue1" name="phnum" [(ngModel)]="taskObj.phnnum"
-          placeholder="name@example.com">
-        <label for="floatingInputValue1">Phone number</label>
+        <input type="text" class="form-control" id="phnum" name="phnum" [(ngModel)]="taskObj.phnnum"
+          placeholder="name@example.com" required>
+        <label for="phnnum">Phone number</label>
       </form>
       <form class="form-floating" id="form3">
-        <input type="text" class="form-control" id="floatingInputValue2" name="name" [(ngModel)]="taskObj.name"
-          placeholder="name@example.com">
-        <label for="floatingInputValue2">Name</label>
+        <input type="text" class="form-control" id="name" name="name" [(ngModel)]="taskObj.name"
+          placeholder="name@example.com" required>
+        <label for="name">Name</label>
       </form>
       <form class="form-floating" id="form3">
-        <input type="email" class="form-control" id="floatingInputValue3" name="email" [(ngModel)]="taskObj.email"
-          placeholder="name@example.com">
-        <label for="floatingInputValue3">Email</label>
+        <input type="email" class="form-control" id="email" name="email" [(ngModel)]="taskObj.email"
+          placeholder="name@example.com" required minlength="4" pattern=".+@gmail\.com" #email="ngModel">
+        <label for="email">Email</label>
+        <div *ngIf="email.invalid && (email.dirty || email.touched)"
+    class="alert">
+
+  <div *ngIf="email.errors?.['required']">
+    Email is required.
+  </div>
+  <div *ngIf="email.errors?.['minlength']">
+    Email must be at least 4 characters long.
+  </div>
+  <div *ngIf="email.errors?.['pattern']">
+    Email must contain @ & gmail & .com.
+  </div>
+</div>
       </form>
       <form class="form-floating" id="form3">
         <input type="text" class="form-control" id="floatingInputValue4" name="password" [(ngModel)]="taskObj.password"
-          placeholder="name@example.com">
+          placeholder="name@example.com" required>
         <label for="floatingInputValue4">Password</label>
       </form>
       <button type="button" (click)="savelogin()" id="login3">Continue</button>

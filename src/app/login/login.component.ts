@@ -89,6 +89,11 @@ export class LoginComponent implements OnInit {
         });
         this.username=this.LogObj[i].name;
       }
+      else
+      {
+        alert("Login failed");
+        break;
+      }
        this.cartservice.setname(this.username);
         console.log(this.username);
       }
